@@ -8,6 +8,7 @@ function move(array,index,offset){
     let position = index + offset
     if(position>=array.length){
         console.error("Invalid offset")
+        // return;
     }
     let result = [...array]
     let element = result.splice(index,1)[0]
